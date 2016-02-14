@@ -4,7 +4,6 @@ bin
 .settings
 .metadata
 .classpath
-.project
 
 # idea
 out
@@ -18,5 +17,4 @@ build
 .gradle
 
 # other
-eclipse
 run
