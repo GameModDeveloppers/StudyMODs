@@ -32,21 +32,28 @@ public class ExampleMod
 	// 追加したいブロックのインスタンス格納先
 	// レシピ等で利用する
 	public static Block addBlock;
+	//test
+	public static Block addBlock2;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		// 追加するブロックインスタンス作成
 		addBlock = new ExampleBlock();
+		addBlock2 = new TestBlock();
 
 		// ゲームレジストリに登録
 		GameRegistry.registerBlock(addBlock, ExampleBlock.MOD_ENTRY_NAME);
+		GameRegistry.registerBlock(addBlock2, TestBlock.MOD_ENTRY_NAME);
 
 		// テクスチャモデル指定JSONファイル名の登録(クライアント起動の場合)
 		if (true == event.getSide().isClient()) {
 			// モデル情報登録
 			ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(addBlock), 0,
 															new ModelResourceLocation(MOD_ID + ":" + ExampleBlock.MOD_ENTRY_NAME, "inventory"));
+			// モデル情報登録
+			ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(addBlock2), 0,
+															new ModelResourceLocation(MOD_ID + ":" + TestBlock.MOD_ENTRY_NAME, "inventory"));
 		}
 	}
 }

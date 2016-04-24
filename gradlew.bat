@@ -16,7 +16,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 @rem <t-kono 2015.01.16> : Add JDK Path
-set JAVA_HOME=C:\PROGRA~1\Java\jdk1.8.0_66
+set JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_74
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
