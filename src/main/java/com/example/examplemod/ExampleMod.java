@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+// MOD情報設定
 @Mod(modid = ExampleMod.MOD_ID,
 	 name = ExampleMod.MOD_NAME,
 	 version = ExampleMod.MOD_VERSION,
